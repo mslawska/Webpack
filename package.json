@@ -1,0 +1,43 @@
+{
+  "name": "cleanscripts_onepage_theme",
+  "side-effects": true,
+  "version": "1.0.0",
+  "description": "OnePage CleanScripts Theme",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-dev": "webpack --mode=development --devtool=source-map",
+    "build": "webpack  --mode=production",
+    "start": "webpack serve --mode=development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CleanScripts/onepage.git"
+  },
+  "keywords": [
+    "OnePage",
+    "Theme",
+    "CleanScripts.com"
+  ],
+  "author": "CleanScripts.com",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/CleanScripts/onepage/issues"
+  },
+  "homepage": "https://github.com/CleanScripts/onepage#readme",
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "css-minimizer-webpack-plugin": "^7.0.0",
+    "html-loader": "^5.0.0",
+    "html-webpack-plugin": "^5.6.0",
+    "mini-css-extract-plugin": "^2.9.0",
+    "sass": "^1.77.6",
+    "sass-loader": "^14.2.1",
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  },
+  "dependencies": {
+    "vanilla-lazyload": "^19.1.3"
+  }
+}

@@ -1,0 +1,77 @@
+@use 'sass:math';
+
+@function vwl($target, $width: 1920) {
+    $vw-context: (
+        $width * 0.01) * 1px;
+    @return math.div($target, $vw-context) * 1.0000001vw;
+}
+
+@function vw($target, $width: 1440) {
+    $vw-context: (
+        $width * 0.01) * 1px;
+    @return math.div($target, $vw-context) * 1.0000001vw;
+}
+
+@function vws($target, $width: 992) {
+    $vw-context: (
+        $width * 0.01) * 1px;
+    @return math.div($target, $vw-context) * 1.0000001vw;
+}
+
+@function vwxs($target, $width: 390) {
+    $vw-context: (
+        $width * 0.01) * 1px;
+    @return math.div($target, $vw-context) * 1.0000001vw;
+}
+
+@function rem($size, $base: 16px) {
+    $remSize: math.div($size, $base
+    );
+@return #{$remSize}rem;
+}
+
+@function vh($target, $height: 1080) {
+    $vh-context: (
+        $height * 0.01) * 1px;
+    @return math.div($target, $vh-context) * 1.0000001vh;
+}
+
+//Linear vw
+@function lvw($SizeMax, $VPmax, $SizeMin, $VPmin) {
+    $fsb: 16px; //Font-size-base boodstrap to px
+    $a: math.div(($SizeMin - $SizeMax), ($VPmin - $VPmax)
+    );
+$b: math.div(($SizeMax - ($a * $VPmax)), $fsb) * 1rem;
+$a: math.div($a, 1px) * 100vw;
+@return calc(#{$b} + #{$a});
+}
+
+@function lh($fontSize, $lghpx) {
+    @return math.div($lghpx, $fontSize);
+}
+
+@mixin box-shadow($top, $left, $blur, $size, $color, $inset: false) {
+    @if $inset {
+        -webkit-box-shadow: inset $top $left $blur $size $color;
+        -moz-box-shadow: inset $top $left $blur $size $color;
+        box-shadow: inset $top $left $blur $size $color;
+    }
+
+    @else {
+        -webkit-box-shadow: $top $left $blur $size $color;
+        -moz-box-shadow: $top $left $blur $size $color;
+        box-shadow: $top $left $blur $size $color;
+    }
+}
+
+@mixin Mobile() {
+    @media (max-width: 991.98px) {
+        @content;
+    }
+}
+
+@mixin Desktop() {
+    @media (min-width: 992px) {
+        @content;
+    }
+}

@@ -1,0 +1,9 @@
+# ignore node dependency directories
+node_modules/
+
+# ignore build files 
+public_html/*
+# ignore log files and databases
+*.log
+*.sql
+*.sqlite
