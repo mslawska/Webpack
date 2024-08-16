@@ -1,5 +1,4 @@
-
-.contact{
+.contact {
     display: flex;
     flex: 1 0 auto;
 }
@@ -9,10 +8,7 @@
 
     background-color: #f2f2f2;
     width: 70%;
-    height: 100%;
     padding: 20px;
-
-    
     border-radius: 20px;
     top: 50px;
     display: flex;
@@ -20,26 +16,36 @@
     align-items: center;
     border: 2px solid black;
 
-    
+
 
 }
 
-.message{
+.message {
     display: flex;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.647);
     display: flex;
     justify-content: center;
     width: 30%;
-  height: 350px;
+    height: 350px;
 
-    img{
-        width:  50px;
+    img {
+        width: 50px;
     }
 
-    &-info{
+    &-info {
         color: white;
+        display: flex;
+        padding: 20px 0;
+        margin-left: 20px;
     }
+}
+
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
 }
 
 h1 {
@@ -48,7 +54,8 @@ h1 {
 
 }
 
-input, textarea{
+input,
+textarea {
     background: transparent;
     border: 0;
     border-bottom: solid 2px #6ed73e;
@@ -57,16 +64,16 @@ input, textarea{
     align-items: center;
     padding: 10px 0;
     margin-top: 30px
-  }
-  
-  .button3{
+}
+
+.button3 {
     margin-top: 30px;
-    height:30px;
+    height: 30px;
     width: 100%;
     background-color: transparent;
     font-family: sans-serif;
     border: 2px solid #6ed73e;
-  }
+}
 
 
 @media only screen and (max-width: 1080px) {
