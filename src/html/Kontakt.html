@@ -11,15 +11,13 @@
     <link rel="preload" as="style" href="https://use.typekit.net/hrg2ner.css" />
     <link rel="stylesheet" href="https://use.typekit.net/hrg2ner.css" media="print" onload="this.media='all'" />
     <link rel="apple-touch-icon" sizes="180x180" href="<%= require('../assets/apple-touch-icon.png') %>">
-    <link rel="icon" type="image/png" sizes="32x32" href="<%= require('../assets/favicon-32x32.png') %>">
-    <link rel="icon" type="image/png" sizes="16x16" href="<%= require('../assets/favicon-16x16.png') %>">
     <link rel="manifest" href="<%= require('../assets/site.webmanifest') %>">
     <meta name='robots' content='<%= robots %>' />
 </head>
 
 <body>
     <%= require('html-loader?{"sources":{"list":["...",{"tag":"img","attribute":"data-src","type":"src"}]}}!./partials/header.html').default %>
-    <%= require('html-loader?{"sources":{"list":["...",{"tag":"img","attribute":"data-src","type":"src"}]}}!./blocks/text-media.html').default %>
+    <%= require('html-loader?{"sources":{"list":["...",{"tag":"img","attribute":"data-src","type":"src"}]}}!./blocks/kontakt.html').default %>
     <%= require('html-loader?{"sources":{"list":["...",{"tag":"img","attribute":"data-src","type":"src"}]}}!./partials/footer.html').default %>
                 
 </body>

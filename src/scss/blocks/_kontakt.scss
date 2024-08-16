@@ -1,0 +1,92 @@
+.box-k {
+
+    background-color: #f2f2f2;
+    width: 300px;
+    height: 100%;
+    padding: 20px;
+    margin-bottom: 100px;
+    margin: 0 auto;
+    border-radius: 20px;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+
+}
+
+input, textarea{
+    background: transparent;
+    border: 0;
+    border-bottom: solid 2px #6ed73e;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    margin-top: 30px
+  }
+  
+  .button3{
+    margin-top: 30px;
+    height:30px;
+    width: 100%;
+    background-color: transparent;
+    font-family: sans-serif;
+    border: 2px solid #6ed73e;
+  }
+
+
+@media only screen and (max-width: 1080px) {
+
+
+
+    h1 {
+
+        width: auto;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        font-size: 30px;
+    }
+
+
+    .box-k {
+
+        width: auto;
+
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid black;
+    }
+
+
+}
+
+@media only screen and (max-width: 750px) {
+
+    .box-k {
+        margin: 10px;
+    }
+
+    .input {
+        width: auto;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .box-k {
+        margin-top: 80px;
+    }
+
+}

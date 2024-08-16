@@ -2,7 +2,7 @@ main {
     margin-top: 30px;
 }
 
-.container {
+.tile-container {
     display: flex;
     box-shadow: 0px 0px 20px #b3a4a4;
     border-radius: 30px;
@@ -56,38 +56,47 @@ main {
     position: relative;
     height: 100%;
     flex-wrap: wrap;
-}
 
-.city>div {
-    border-top-left-radius: 40%;
-    border-top-right-radius: 40%;
-    overflow: hidden;
-}
-
-.city-container {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    height: 250px;
-
-    div {
-        background-color: grey;
-        text-align: center;
-        padding: 10px 0px;
-    }
-
-    img {
-        width: 100%;
-        height: 100%;
+    >div {
         border-top-left-radius: 40%;
         border-top-right-radius: 40%;
+        overflow: hidden;
+    }
+
+
+    &-container {
+
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        height: 250px;
+
+        div {
+            background-color: grey;
+            text-align: center;
+            padding: 10px 0px;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            border-top-left-radius: 40%;
+            border-top-right-radius: 40%;
+        }
     }
 }
 
 
-.nazwa {
+
+
+
+.name {
     display: flex;
     align-items: left;
+
+    h1{
+        font-weight: bold;
+    }
 
 }
 
@@ -100,7 +109,7 @@ h1 {
 }
 
 
-.karta {
+.tile {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -130,6 +139,19 @@ h1 {
 
         font-size: 20px;
     }
+
+    h2{
+        font-size: 30px;
+        font-weight: bold;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    h3{
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
 }
 
 
@@ -149,6 +171,8 @@ h1 {
     h2 {
         font-size: 30px;
         margin-bottom: 10px;
+        margin-top: 20px;
+        font-weight: bold;
     }
 
 }
@@ -183,20 +207,22 @@ h1 {
 @media only screen and (max-width: 1080px) {
 
 
-    .karta {
+    .tile {
         display: flex;
         justify-content: center;
         width: 100%;
+
+        img {
+            height: 50vw;
+            border-radius: 30px;
+            width: 100%;
+            margin-right: 30px;
+
+
+        }
+
     }
 
-    .karta img {
-        height: 50vw;
-        border-radius: 30px;
-        width: 100%;
-        margin-right: 30px;
-
-
-    }
 
 
 
@@ -204,12 +230,18 @@ h1 {
 
 @media only screen and (max-width: 750px) {
 
-    .miasta {
+    .city {
         margin-left: auto;
         margin-right: auto;
         width: 100%;
         flex: initial;
+
+        &-container{
+            margin-bottom: 30px;
+        }
     }
+
+
 
 
     .button2 {
@@ -222,10 +254,11 @@ h1 {
 
 
 
+
 }
 
 @media only screen and (max-width: 620px) {
-    .container {
+    .tail-container {
         display: flex;
         flex-wrap: wrap;
         margin: 0 50px;
@@ -241,12 +274,17 @@ h1 {
         text-align: center;
     }
 
-    .karta img {
+    .tile img {
 
         margin-right: 0;
 
 
     }
+
+    .tile-container{
+        flex-direction: column
+    }
+
 }
 
 @media only screen and (max-width: 519px) {
@@ -254,7 +292,7 @@ h1 {
         white-space: nowrap;
     }
 
-    .karta img {
+    .tile img {
 
         margin-right: 0;
 

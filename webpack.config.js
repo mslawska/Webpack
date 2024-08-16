@@ -42,7 +42,7 @@
             new HtmlWebpackPlugin({
                 hash: true,
                 meta: { viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no' },
-                title: 'Tytuł strony głównej',
+                title: 'Strona glowna',
                 templateParameters: {
                     robots: 'index, follow'
                 },
@@ -53,7 +53,7 @@
             new HtmlWebpackPlugin({
                  hash: true,
                  meta: { viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no' },
-                 title: 'Inna podstrona',
+                 title: 'Wyscigi',
                  templateParameters: {
                      robots: 'index, follow'
                  },
@@ -61,6 +61,17 @@
                  minify: false,
                  filename: './Wyscigi.html' //relative to root of the application
              }),
+             new HtmlWebpackPlugin({
+                hash: true,
+                meta: { viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no' },
+                title: 'Kontakt',
+                templateParameters: {
+                    robots: 'index, follow'
+                },
+                template: './src/html/Kontakt.html',
+                minify: false,
+                filename: './Kontakt.html' //relative to root of the application
+            }),
             new MiniCssExtractPlugin({
                 filename: "[name].css",
             }),
