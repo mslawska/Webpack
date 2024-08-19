@@ -41,6 +41,7 @@
         color: white;
         border-bottom: 3px solid transparent;
         transition: border-bottom 0.4s linear; 
+        
     
     }
 
@@ -54,6 +55,7 @@
 
   .menu-mobile{
     display: none;
+    z-index: 1;
     
     #mylinks div{
         padding: 5px;

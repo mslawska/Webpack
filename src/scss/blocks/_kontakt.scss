@@ -6,15 +6,15 @@
 
 .box-k {
 
-    background-color: #f2f2f2;
+   
     width: 70%;
     padding: 20px;
-    border-radius: 20px;
+    
     top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid black;
+    
 
 
 
@@ -23,11 +23,15 @@
 .message {
     display: flex;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.647);
+    background-color: rgb(90, 90, 90);
     display: flex;
     justify-content: center;
-    width: 30%;
+    width: 33%;
     height: 350px;
+    position: absolute;
+    right: 0;
+    top: 300px;
+    bottom: 0;
 
     img {
         width: 50px;
@@ -41,6 +45,12 @@
     }
 }
 
+.background{
+    width: 100%;
+    background-color:#6ed73e;
+    z-index: 0;
+    flex: 1;
+}
 
 .wrapper {
     display: flex;
@@ -63,16 +73,23 @@ textarea {
     display: flex;
     align-items: center;
     padding: 10px 0;
-    margin-top: 30px
+    margin-top: 30px;
+    width: 300px;
+}
+
+textarea{
+    height: 250px;
 }
 
 .button3 {
     margin-top: 30px;
+    margin-bottom: 30px;
     height: 30px;
     width: 100%;
     background-color: transparent;
     font-family: sans-serif;
     border: 2px solid #6ed73e;
+    display: block;
 }
 
 
@@ -91,13 +108,13 @@ textarea {
 
     .box-k {
 
-        width: auto;
+       
 
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
-        border: 2px solid black;
+        
     }
 
 
@@ -121,4 +138,19 @@ textarea {
         margin-top: 80px;
     }
 
+}
+
+@media only screen and (max-width: 810px) {
+
+    .wrapper{
+        display: none;
+    }
+
+    .message{
+        width: 20%
+    }
+
+    .background{
+        display: none;
+    }
 }

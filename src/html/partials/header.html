@@ -1,3 +1,22 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        <%= htmlWebpackPlugin.options.title %>
+    </title>
+    <link rel="preconnect" href="https://use.typekit.net" crossorigin />
+    <link rel="preconnect" href="https://p.typekit.net/" crossorigin />
+    <link rel="preload" as="style" href="https://use.typekit.net/hrg2ner.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/hrg2ner.css" media="print" onload="this.media='all'" />
+    <link rel="apple-touch-icon" sizes="180x180" href="<%= require('../assets/apple-touch-icon.png') %>">
+    <link rel="icon" type="image/png" sizes="32x32" href="<%= require('../assets/favicon-32x32.png') %>">
+    <link rel="icon" type="image/png" sizes="16x16" href="<%= require('../assets/favicon-16x16.png') %>">
+    <link rel="manifest" href="<%= require('../assets/site.webmanifest') %>">
+    <meta name='robots' content='<%= robots %>' />
+</head>
+
  <header class="header">
 
         <div class="header-container">
