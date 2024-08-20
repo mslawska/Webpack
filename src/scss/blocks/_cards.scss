@@ -1,0 +1,79 @@
+
+.card1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.card2{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    
+}
+
+
+.photo{
+    
+    height: 500px;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    margin: 10px 0px;
+    border-radius: 30px;
+    text-decoration: none;
+
+    h3{
+        width: 100%;
+        color: rgba(255, 255, 255, 0.866);
+        font-size: 30px;
+        font-family: sans-serif;
+        background-color: rgb(0,0,0,0.5);
+        text-decoration: none;
+        text-align: center;
+        padding: 15px 0;
+        display: block;
+        font-weight: lighter;
+        text-align: center;
+        
+
+    }
+
+    
+    
+
+}
+
+.photo:hover h3{
+    font-size: 40px;
+}
+
+
+#z1{
+    background-image: url("../assets/img/buty.jpg");
+    
+
+}
+
+#z2{
+    background-image: url("../assets/img/zegar.jpg");
+    
+}
+
+#z3{
+    background-image: url("../assets/img/tetno2.jpg");
+}
+
+#z4{
+    background-image: url("../assets/img/dieta3.jpg");
+
+}
